@@ -143,17 +143,25 @@ Run the playbook and navigate to http://104.210.51.88:5601/app.kibana to check t
 •	Which file is the playbook and Where do you copy it?
 
   •	Pentest.yml (Ansible-Playbook) – Location: /etc/ansible/pentest.yml
+  
   •	Elk-yml (elk-playbook.yml) – Location: /etc/ansible/elk.yml
+  
   •	Filebeat-Playbook.yml – Location: /etc/ansible/roles/filebeat-playbook.yml
+  
   •	Metricbeat-Playbook.yml – Location: /etc/ansible/roles/metricbeat-playbook.yml
 •	
 •	Which file do you update to make Ansible run the playbook on a specific machine?
 
   •	Hosts file (Location: /etc/ansible/hosts)
+  
   •	Changes: [webserver]
+  
   •	10.1.0.5 ansible_python_interpreter=/usr/bin/python3 (IP address of VM web)
+  
   •	10.1.0.7 ansible_python_interpreter=/usr/bin/python3
+  
   •	[Elk server]
+  
   •	10.0.0.4 ansible_python_interpreter=/usr/bin/python3  
 •	
 •	 How do I specify which machine to install the ELK server on versus which to install Filebeat on?
