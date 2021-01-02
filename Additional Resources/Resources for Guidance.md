@@ -20,13 +20,13 @@
     http://your-IP:5601/app/kibana#/home?
 
       
-    -Docker Commands Cheat sheet: 
+   -Docker Commands Cheat sheet: 
 
-    https://phoenixnap.com/kb/list-of-docker-commands-cheat-sheet
+   https://phoenixnap.com/kb/list-of-docker-commands-cheat-sheet
 
-    -Draft a network diagram (https://www.gliffy.com/)
+   -Draft a network diagram (https://www.gliffy.com/)
 
-    https://www.elastic.co/beats/filebeat 
+   https://www.elastic.co/beats/filebeat 
    
-    https://www.elastic.co/beats/metricbeat
+   https://www.elastic.co/beats/metricbeat
 
