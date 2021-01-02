@@ -12,12 +12,12 @@
       
    -Virtual Memory Documentation: 
 
-    https://www.elastic.co/guide/en/elasticsearch/reference/current/vm-max-map-count.html
+   https://www.elastic.co/guide/en/elasticsearch/reference/current/vm-max-map-count.html
 
       
-    -ELK Server URL: 
+   -ELK Server URL: 
 
-    http://your-IP:5601/app/kibana#/home?
+   http://your-IP:5601/app/kibana#/home?
 
       
    -Docker Commands Cheat sheet: 
