@@ -1,8 +1,9 @@
 # CyberSecurity
 Additional Resources for Guidance:
+
 -Ansible Documentation:
 
-Link: https://docs.ansible.com/ansible/latest/modules/modules_by_category.html
+https://docs.ansible.com/ansible/latest/modules/modules_by_category.html
 
 -elk-docker Documentation: 
 Link: https://elk-docker.readthedocs.io/#Elasticsearch-logstash-kibana-elk-docker-image-documentation
