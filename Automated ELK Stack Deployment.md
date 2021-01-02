@@ -46,8 +46,8 @@ Metricbeat collect metrics and statistics from the operating system and from the
 
 The configuration details of each machine may be found below (Red-Team Resource Group).
 
-| Name  	| Function  | OS  		  | Location | PrivateIP  |PublicIP     |
-|-JumpBox-|-Gateway --|-Linux VM--|-US-East--|-10.1.0.4 --|13.90.94.255-|
+| Name  	| Function        | OS        | Location | PrivateIP  |PublicIP     |
+| JumpBox       |Gateway          | Linux VM  |US-East   |10.1.0.4    |13.90.94.255 |             
 | Web-1  	|Server		  | Linux VM  | US-East  | 10.1.0.5   |             |
 | Web-3  	| Server	  | Linux VM  | US-East  | 10.1.0.7   |             |
 | Elk	  	| Server	  | Linux VM  | Us-East  | 10.0.0.4   |104.210.51.88|
@@ -77,11 +77,11 @@ What was its IP address?
 
 A summary of the access policies in place can be found in the table below.
 
-|Name   	  |Publicly Accessible  	     | Allowed IP Address  	                   |
-| JumpBox--	|No (SSH-public key auth)-   |[(107.190.0.0/16) to (13.90.94.255)      |
-| Web-1  	  |Yes, through Load Balancer	 | 137.135.127.119(LB) & 10.1.0.4(JumpBox) |
-| Web-3 	  |Yes, through Load balancer  | 137.135.127.119(LB) & 10.1.0.4(JumpBox) |
-| Elk   	  |Yes   					             |SSH 10.1.0.4(jumpBox) 104.210.51.88:5601)|
+|Name   	   |Publicly Accessible  	     | Allowed IP Address  	               |
+| JumpBox	   |No (SSH-public key auth)         |[(107.190.0.0/16) to (13.90.94.255)      |
+| Web-1  	   |Yes, through Load Balancer	     | 137.135.127.119(LB) & 10.1.0.4(JumpBox) |
+| Web-3 	   |Yes, through Load balancer       | 137.135.127.119(LB) & 10.1.0.4(JumpBox) |
+| Elk   	   |Yes   			     |SSH 10.1.0.4(jumpBox) 104.210.51.88:5601)|
 
 			XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
 
@@ -97,13 +97,21 @@ It can deploy multiple servers easily and quickly without having to physically t
 The playbook implements the following tasks:
 
 In 3-5 bullets, explain the steps of the ELK installation play. E.g., install Docker; download image; etc.
+
 	1.	Connect to jump box form local pc. (# ssh azureuser@13.90.94.255) 
+	
 	2.	Install the docker on jump box. (# sudo apt install docker.io) 
+		
 	3.	Pull the cyberxsecurity/ansible container inside docker. (# sudo docker pull cyberxsecurity/ansible)
+	
 	4.	Find out the Container list on docker (# sudo docker container list -a / ps)
+	
 	5.	Start / attach the ansible container. (# sudo docker start/attach container elated_blackwell)
+	
 	6.	Went to /etc/ansible/roles directory and created the ELK playbook (Elk_Playbook.yml)
+	
 	7.	Ran the Elk_Playbook.yml in that same directory (ansible-playbook Elk_Playbook.yml)
+	
 	8.	Lastly, I SSH into the ELK-VM to verify the server is up and running.
 	
 The following screenshot displays the result of running `docker ps` after successfully configuring the ELK instance.
@@ -122,6 +130,7 @@ This ELK server is configured to monitor the following machines:
 We have installed the following Beats on these machines:
 •	Filebeat configuration and playbook
 •	Metricbeat configuration and playbook
+
 These Beats allow us to collect the following information from each machine:
 In 1-2 sentences, explain what kind of data each beat collects, and provide 1 example of what you expect to see. E.g., Winlogbeat collects Windows logs, which we use to track user logon events, etc._
 •	Filebeat is a log data shipper for local files. Installed as an agent on your servers, Filebeat monitors the log directories or specific log files, tails the files, and forwards them either to Elasticsearch or Logstash for indexing. An example of such are the logs produced from the MySQL database supporting our application.
@@ -142,27 +151,27 @@ Run the playbook and navigate to http://104.210.51.88:5601/app.kibana to check t
 
 •	Which file is the playbook and Where do you copy it?
 
-  •	Pentest.yml (Ansible-Playbook) – Location: /etc/ansible/pentest.yml
+•	Pentest.yml (Ansible-Playbook) – Location: /etc/ansible/pentest.yml
   
-  •	Elk-yml (elk-playbook.yml) – Location: /etc/ansible/elk.yml
+•	Elk-yml (elk-playbook.yml) – Location: /etc/ansible/elk.yml
   
-  •	Filebeat-Playbook.yml – Location: /etc/ansible/roles/filebeat-playbook.yml
+•	Filebeat-Playbook.yml – Location: /etc/ansible/roles/filebeat-playbook.yml
   
-  •	Metricbeat-Playbook.yml – Location: /etc/ansible/roles/metricbeat-playbook.yml
-•	
+•	Metricbeat-Playbook.yml – Location: /etc/ansible/roles/metricbeat-playbook.yml
+	
 •	Which file do you update to make Ansible run the playbook on a specific machine?
 
-  •	Hosts file (Location: /etc/ansible/hosts)
+•	Hosts file (Location: /etc/ansible/hosts)
   
-  •	Changes: [webserver]
+•	Changes: [webserver]
   
-  •	10.1.0.5 ansible_python_interpreter=/usr/bin/python3 (IP address of VM web)
+•	10.1.0.5 ansible_python_interpreter=/usr/bin/python3 (IP address of VM web)
   
-  •	10.1.0.7 ansible_python_interpreter=/usr/bin/python3
+•	10.1.0.7 ansible_python_interpreter=/usr/bin/python3
   
-  •	[Elk server]
+•	[Elk server]
   
-  •	10.0.0.4 ansible_python_interpreter=/usr/bin/python3  
+•	10.0.0.4 ansible_python_interpreter=/usr/bin/python3  
 •	
 •	 How do I specify which machine to install the ELK server on versus which to install Filebeat on?
 
@@ -172,9 +181,9 @@ Run the playbook and navigate to http://104.210.51.88:5601/app.kibana to check t
 
 •	Which URL do you navigate to in order to check that the ELK server is running?
 •	
-  •	http://[your.ELK-VM.External.IP]:5601/app/kibana.
+•	http://[your.ELK-VM.External.IP]:5601/app/kibana.
 
-  •	http://104.210.51.88:5601/app/kibana
+•	http://104.210.51.88:5601/app/kibana
 •	
 •	_As a **Bonus**, provide the specific commands the user will need to run to download the playbook, update the files, etc.
 
