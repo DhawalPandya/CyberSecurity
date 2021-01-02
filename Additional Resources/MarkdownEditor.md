@@ -1,4 +1,4 @@
-**Additional Resources for Guidance:**
+**Resources for Guidance:**
 
    -Ansible Documentation:
 
