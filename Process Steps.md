@@ -1,5 +1,6 @@
 ######  Azure Resource Group: (Red Team) #######
 
+[RedTeam-Diagram](https://github.com/DhawalPandya/CyberSecurity/blob/main/Screenshot/RedTeam-Diagram.png)
 
 A.	Virtual Network (Red Team Net):
 
