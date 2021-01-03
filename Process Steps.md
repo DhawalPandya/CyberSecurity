@@ -4,7 +4,7 @@
 
 A.	Virtual Network (Red Team Net):
 
-		10.1.0.0/16	Subnet:		10.0.0.0/24
+	10.1.0.0/16	Subnet:		10.0.0.0/24
 
 B.	Network Security Group: 
 
@@ -18,11 +18,11 @@ Incoming rule:
 
 Outbound rule:	 
 	          
-| Type  		|Private IP   	      | Public IP               |
-|----------------------:|:-------------------:|:------------------------|
-|Jump Box VM	        | 10.1.0.4            |13.90.94.255             |
-| Web -1		| 10.1.0.5	      |137.135.127.119          |
-| Web -3  		| 10.1.0.7	      |137.135.127.119          |
+| Type  		|Private IP   	      |    Public IP               |
+|----------------------:|:-------------------:|:---------------------------|
+|Jump Box VM	        | 10.1.0.4            |    13.90.94.255            |
+| Web -1		| 10.1.0.5	      |    137.135.127.119         |
+| Web -3  		| 10.1.0.7	      |    137.135.127.119         |
                
 
 1.#ssh-keygen (Generate SSH key on Local PC and Copy public key and paste inside the Jump Box ssh password)
@@ -59,13 +59,13 @@ Web - 3
  
 11.Root# sudo nano /etc/ansible/ansible.cfg 	(Change ansible configure file)
 
-   Remote_user = sysadmin
+Remote_user = sysadmin
 
 12.Root# sudo nano /etc/ansible/hosts		(Change Hosts file)
 
-	10.1.0.5 ansible_python_interpreter = /usr/bin/python3
+10.1.0.5 ansible_python_interpreter = /usr/bin/python3
 	
-	10.1.0.7 ansible_python_interpreter= /usr/bin/python3
+10.1.0.7 ansible_python_interpreter= /usr/bin/python3
  
 13. root#........: cd /etc/ansible/
 
@@ -92,7 +92,7 @@ Web - 3
     
 	Virtual Machine (Web-1/ Web -3) and IP address (10.1.0.5 / 10.1.0.7)
 	
- I have already made network security rule before, but configuration will be: 
+I have already made network security rule before, but configuration will be: 
 
 SSH-LBR – Ipv4 – Frontend Address (137.135.127.119) – TCP – 80 – Backend port-80 – backend pool (2 virtual machine) – health 		Probe (TCP-80) – Session Persistence (Client IP and Protocol)
 
@@ -120,7 +120,7 @@ Peering Network Connection:
 
 3.Check the connection from elacted_blackwell container to new ELK server.
 
- ssh sysadmin@10.0.0.4
+ssh sysadmin@10.0.0.4
    
 4.Edit the hosts file under jumpbox, elated_blackwell container (/etc/ansible/hosts)
     
@@ -128,11 +128,11 @@ Peering Network Connection:
 
 	10.0.0.4 ansible_python_interpreter=/usr/bin/python3
  
- [Hosts File Configuration](https://github.com/DhawalPandya/CyberSecurity/blob/main/Screenshot/LoginELK-ConfigHostsfile.PNG)
+[Hosts File Configuration](https://github.com/DhawalPandya/CyberSecurity/blob/main/Screenshot/LoginELK-ConfigHostsfile.PNG)
  
 5.After configured hosts file, I can run the play book and install packages
 
-  Build the play book to install packages for ELK server.
+Build the play book to install packages for ELK server.
  	
 [ELK Playbook](https://github.com/DhawalPandya/CyberSecurity/blob/main/Screenshot/ElkPlaybook.PNG)
     
