@@ -73,11 +73,11 @@ Web - 3
 
 14. root#.... /etc/ansible# ansible all -m ping 	(Verify the ansible configuration file)
 
-[Verify Plybook]()
+[Verify Plybook](https://github.com/DhawalPandya/CyberSecurity/blob/main/Screenshot/VerifyConfigFile.PNG)
  
 15.root#......:/etc/ansible# nano pentest.yml 		(Run playbook to install docker, python and DVWA on web 1/3)
 
-[Pentest-Playbook]()
+[Pentest-Playbook](https://github.com/DhawalPandya/CyberSecurity/blob/main/Screenshot/PentestPlaybook.PNG)
  
 16.root#....: /etc/ansible# ansible-playbook pentest.yml
 17.root#.... ssh sysadmin@10.1.0.5/7  (connect the web1 and web3 to conform DVWA installation)
@@ -98,10 +98,8 @@ SSH-LBR – Ipv4 – Frontend Address (137.135.127.119) – TCP – 80 – Backe
 
 21.Homework would be done, if this DVWA application is working inside any browser: I check it and it is working fine. 
 
-   http://137.135.127.119/setup.php
+http://137.135.127.119/setup.php[DVWA]()
  
-xxxxxxxxxxxxx
-
 Project: 
 
 At last homework, I created 3 Virtual machines (1- Jump box, 2 – web server).
