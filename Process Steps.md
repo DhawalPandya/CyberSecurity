@@ -98,7 +98,7 @@ SSH-LBR – Ipv4 – Frontend Address (137.135.127.119) – TCP – 80 – Backe
 
 21.Homework would be done, if this DVWA application is working inside any browser: I check it and it is working fine. 
 
-http://137.135.127.119/setup.php[DVWA](https://github.com/DhawalPandya/CyberSecurity/blob/main/Screenshot/DVWA.PNG)
+[http://137.135.127.119/setup.php](https://github.com/DhawalPandya/CyberSecurity/blob/main/Screenshot/DVWA.PNG)
  
 Project: 
 
