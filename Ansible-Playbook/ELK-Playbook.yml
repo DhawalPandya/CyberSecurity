@@ -1,4 +1,5 @@
 ########Install docker, pip3, increase mvirtual memory and install ELK container######### 
+################ by default location /etc/ansible/  ########
 
 ---
  - name: Config elk with Docker
