@@ -33,7 +33,7 @@ Load balancing ensures that the application will be highly available, in additio
 
 Jump box allow for more easy administration of multiple systems and provide an additional security layer between the outside and internal assets. It works as secure admin workstation.
 
-Integrating an ELK server allows users to easily monitor the vulnerable VMs for changes to the _____ and system _____.
+Integrating an ELK server allows users to easily monitor the vulnerable VMs for changes to the network and system logs.
 - Filebeat monitors the log files or location that you specify, collects log events, and forwards them to either to Elasticsearch or Logstash for Indexing.
 - Metricbeat collect metrics and statistics from the operating system and from the services running on the server
 
