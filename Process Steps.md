@@ -69,13 +69,15 @@ Web - 3
  
 13. root#........: cd /etc/ansible/
 
+[Docker Ansible Container](https://github.com/DhawalPandya/CyberSecurity/blob/main/Screenshot/Docker-ps.PNG)
+
 14. root#.... /etc/ansible# ansible all -m ping 	(Verify the ansible configuration file)
 
-xxxxxxxxxxx
+[Verify Plybook]()
  
 15.root#......:/etc/ansible# nano pentest.yml 		(Run playbook to install docker, python and DVWA on web 1/3)
 
-   xxxxxxxxx
+[Pentest-Playbook]()
  
 16.root#....: /etc/ansible# ansible-playbook pentest.yml
 17.root#.... ssh sysadmin@10.1.0.5/7  (connect the web1 and web3 to conform DVWA installation)
