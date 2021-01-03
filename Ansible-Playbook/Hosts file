@@ -1,5 +1,7 @@
 #    - This is by deafault hosts files inside the ansible folder
 #   - bydefault location /etc/ansible/hosts
+#
+#
 #   - Comments begin with the '#' character
 #   - Blank lines are ignored
 #   - Groups of hosts are delimited by [header] elements
