@@ -127,7 +127,7 @@ Answer the following questions to fill in the blanks:_ Where do you copy it?
 - Which file do you update to make Ansible run the playbook on a specific machine? 
   Hosts file (Location: /etc/ansible/hosts)
 	
-	Changes: [webserver]
+	         [webserver]
 	
 	10.1.0.5 ansible_python_interpreter=/usr/bin/python3 (IP address of VM web)
 	
