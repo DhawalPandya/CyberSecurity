@@ -133,14 +133,16 @@ Answer the following questions to fill in the blanks:_ Where do you copy it?
 	
 	10.1.0.7 ansible_python_interpreter=/usr/bin/python3
 	
-			[Elk server]
+		 [Elk server]
 			
 	10.0.0.4 ansible_python_interpreter=/usr/bin/python3  
 
 - How do I specify which machine to install the ELK server on versus which to install Filebeat on?_
-  There is two separate groups in side the Hosts file(/etc/ansible/hosts).one group for the WEBServer and has IP address of web machine, where I will install filebeat and metricbeat too Another group for ELK server and it has own separate ip addtess. Where I can install ELK. 
+
+  There is two separate groups in side the Hosts file(/etc/ansible/hosts).one group for the WEBServer and has IP address of web machine, where I will install filebeat and metricbeat too Another group for ELK server and it has own separate ip addtes, Where I can install ELK. 
 
 - Which URL do you navigate to in order to check that the ELK server is running?
+
  http://[your.ELK-VM.External.IP]:5601/app/kibana.
  
  [http://104.210.51.88:5601/app/kibana](https://github.com/DhawalPandya/CyberSecurity/blob/main/Screenshot/KibanaWebpage.PNG)
