@@ -8,9 +8,10 @@ These files have been tested and used to generate a live ELK deployment on Azure
 
   -[Pentest Playbook]: it run on ansible container to install DVWA on both web server (Web-1 and Web-2) 
   
- [ELK Playbook](https://github.com/DhawalPandya/CyberSecurity/blob/main/Ansible-Playbook/ELK-Playbook.yml)
+ [ELK Playbook](https://github.com/DhawalPandya/CyberSecurity/blob/main/Ansible-Playbook/ELK-Playbook.yml) it run on ansible container to install ELK server
   
- [Metricbeat Playbook](https://github.com/DhawalPandya/CyberSecurity/blob/main/Ansible-Playbook/Filebeat-Playbook.yml)
+ [Metricbeat Playbook](https://github.com/DhawalPandya/CyberSecurity/blob/main/Ansible-Playbook/Filebeat-Playbook.yml) install and configure metricbeat on Elk server and Web server
+ 
  [Filebeat Playbook](https://github.com/DhawalPandya/CyberSecurity/blob/main/Ansible-Playbook/Filebeat-Playbook.yml) install and configure metricbeat on Elk server and Web server 
   
   
