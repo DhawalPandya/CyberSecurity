@@ -12,16 +12,16 @@ Incoming rule:
 | Type              | Port    | Source IP           | Destination IP    |
 |------------------:|:-------:|:-------------------:|:------------------|
 |  MY public IP     | 22      | 107.190.0.0/16	    |Virtual Network    |
-|  Ssh Jump Box     |  22     |   10.1.0.4	        |Virtual Network    |
+|  Ssh Jump Box     |  22     |   10.1.0.4	    |Virtual Network    |
 |  Http             |  80     | 107.190.0.0/16      |Virtual Network    |
 
 Outbound rule:	 
 	          
-| Type  			 	|Private IP   		  | Public IP               |
+| Type  		|Private IP   	      | Public IP               |
 |----------------------:|:-------------------:|:------------------------|
-|Jump Box VM			| 10.1.0.4			  |13.90.94.255             |
-| Web -1				| 10.1.0.5			  |137.135.127.119          |
-| Web -3  				| 10.1.0.7			  |137.135.127.119          |
+|Jump Box VM	        | 10.1.0.4            |13.90.94.255             |
+| Web -1		| 10.1.0.5	      |137.135.127.119          |
+| Web -3  		| 10.1.0.7	      |137.135.127.119          |
                
 
 1.	#ssh-keygen (Generate SSH key on Local PC and Copy public key and paste inside the Jump Box ssh password)
