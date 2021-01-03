@@ -1,5 +1,5 @@
 ####### Install filebeat playbook ###########
-
+######### by default location /etc/ansible/roles/ #######
 ---
 - name: installing and launching filebeat
   hosts: webservers
