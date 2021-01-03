@@ -128,9 +128,13 @@ Answer the following questions to fill in the blanks:_ Where do you copy it?
   Hosts file (Location: /etc/ansible/hosts)
 	
 	Changes: [webserver]
+	
 	10.1.0.5 ansible_python_interpreter=/usr/bin/python3 (IP address of VM web)
+	
 	10.1.0.7 ansible_python_interpreter=/usr/bin/python3
+	
 			[Elk server]
+			
 	10.0.0.4 ansible_python_interpreter=/usr/bin/python3  
 
 - How do I specify which machine to install the ELK server on versus which to install Filebeat on?_
