@@ -6,13 +6,13 @@ The files in this repository were used to configure the network depicted below.
 
 These files have been tested and used to generate a live ELK deployment on Azure. They can be used to either recreate the entire deployment pictured above. Alternatively, select portions of the playbook (.yml) file may be used to install only certain pieces of it, such as Filebeat.
 
-  -[Pentest Playbook]: it run on ansible container to install DVWA on both web server (Web-1 and Web-2) 
+ [Pentest Playbook](https://github.com/DhawalPandya/CyberSecurity/blob/main/Ansible-Playbook/Pentest.yml) : it run on ansible container to install DVWA on both web server (Web-1 and Web-2) 
   
- [ELK Playbook](https://github.com/DhawalPandya/CyberSecurity/blob/main/Ansible-Playbook/ELK-Playbook.yml) it run on ansible container to install ELK server
+ [ELK Playbook](https://github.com/DhawalPandya/CyberSecurity/blob/main/Ansible-Playbook/ELK-Playbook.yml) : it run on ansible container to install ELK server
   
- [Metricbeat Playbook](https://github.com/DhawalPandya/CyberSecurity/blob/main/Ansible-Playbook/Filebeat-Playbook.yml) install and configure metricbeat on Elk server and Web server
+ [Metricbeat Playbook](https://github.com/DhawalPandya/CyberSecurity/blob/main/Ansible-Playbook/Filebeat-Playbook.yml) : it install and configure metricbeat on Elk server and Web server
  
- [Filebeat Playbook](https://github.com/DhawalPandya/CyberSecurity/blob/main/Ansible-Playbook/Filebeat-Playbook.yml) install and configure metricbeat on Elk server and Web server 
+ [Filebeat Playbook](https://github.com/DhawalPandya/CyberSecurity/blob/main/Ansible-Playbook/Filebeat-Playbook.yml) :  it install and configure metricbeat on Elk server and Web server 
   
   
 This document contains the following details:
