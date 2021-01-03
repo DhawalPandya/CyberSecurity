@@ -26,7 +26,9 @@ Outbound rule:
                
 
 1.#ssh-keygen (Generate SSH key on Local PC and Copy public key and paste inside the Jump Box ssh password)
+
 2.#ssh AzureUser@13.90.94.255 (Access Jump Box and Log in)
+
 3.azureuser@jump-box: $ sudo apt update
 
     $ sudo apt install docker.io (Docker install on Jump Box)
@@ -41,12 +43,10 @@ Outbound rule:
 
   $ sudo docker start elated_blackwell (Particular container start inside the docker) 
     
-    xxxxxxxxx
+ [Docker Container]()
  
 7.$ sudo docker attach elated_blackwell (Attached container with docker) After Prompt will change 
-     
-     xxxxxxxx
-     
+       
 8.Now prompt (root@......) changed and inside the container (Elated_blackwell)
 9.$ ssh-keygen (it will generate key inside the: /root/.ssh/id_rsa.pub - - Copy key and paste inside the Web-1/2)
 10.$ ssh sysadmin@10.1.0.5 / 7 (Conform connection with Web-1/3)
