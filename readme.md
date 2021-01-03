@@ -10,7 +10,7 @@ These files have been tested and used to generate a live ELK deployment on Azure
   
   -[ELK Install]: it run on ansible container to install ELK server
   
- 	[Metricbeat Playbook](https://github.com/DhawalPandya/CyberSecurity/blob/main/Ansible-Playbook/Filebeat-Playbook.yml)
+ 	-[Metricbeat Playbook](https://github.com/DhawalPandya/CyberSecurity/blob/main/Ansible-Playbook/Filebeat-Playbook.yml)
  	-[Filebeat Playbook]: install and configure metricbeat on Elk server and Web server
   
   
@@ -125,6 +125,7 @@ Answer the following questions to fill in the blanks:_ Where do you copy it?
    
 - Which file do you update to make Ansible run the playbook on a specific machine? 
   Hosts file (Location: /etc/ansible/hosts)
+	
 	Changes: [webserver]
 	10.1.0.5 ansible_python_interpreter=/usr/bin/python3 (IP address of VM web)
 	10.1.0.7 ansible_python_interpreter=/usr/bin/python3
