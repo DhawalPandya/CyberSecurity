@@ -139,6 +139,6 @@ Answer the following questions to fill in the blanks:_ Where do you copy it?
 - Which URL do you navigate to in order to check that the ELK server is running?
  http://[your.ELK-VM.External.IP]:5601/app/kibana.
  
- [http://104.210.51.88:5601/app/kibana]()
+ [http://104.210.51.88:5601/app/kibana](https://github.com/DhawalPandya/CyberSecurity/blob/main/Screenshot/KibanaWebpage.PNG)
 
 _As a **Bonus**, provide the specific commands the user will need to run to download the playbook, update the files, etc._
