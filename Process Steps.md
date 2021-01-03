@@ -51,13 +51,11 @@ Outbound rule:
 9.$ ssh-keygen (it will generate key inside the: /root/.ssh/id_rsa.pub - - Copy key and paste inside the Web-1/2)
 10.$ ssh sysadmin@10.1.0.5 / 7 (Conform connection with Web-1/3)
 
-Web-1
+Web - 1
  
- xxxxxx
- 
-Web -3
+Web - 3
 
- xxxxxx
+[Web -1 & Web - 3 Login](https://github.com/DhawalPandya/CyberSecurity/blob/main/Screenshot/LoginWeb1-3.PNG)
  
 11.Root# sudo nano /etc/ansible/ansible.cfg 	(Change ansible configure file)
 
