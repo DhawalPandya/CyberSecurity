@@ -122,21 +122,19 @@ Peering Network Connection:
 
  ssh sysadmin@10.0.0.4
    
- xxxxxx
- 
 4.Edit the hosts file under jumpbox, elated_blackwell container (/etc/ansible/hosts)
     
     [ELKSERVER1}
 
 	10.0.0.4 ansible_python_interpreter=/usr/bin/python3
  
- xxxxxxx
+ [Hosts File Configuration](https://github.com/DhawalPandya/CyberSecurity/blob/main/Screenshot/LoginELK-ConfigHostsfile.PNG)
  
 5.After configured hosts file, I can run the play book and install packages
 
   Build the play book to install packages for ELK server.
  	
-    xxxxxxxx
+[ELK Playbook](https://github.com/DhawalPandya/CyberSecurity/blob/main/Screenshot/ElkPlaybook.PNG)
     
 6.Add ssh access in network security group at ELKServer1NSG
 	
@@ -148,68 +146,45 @@ Peering Network Connection:
 
  Before browser, I can check it in elkserver: 
  
-  xxxxxxxx
+[kibana check](https://github.com/DhawalPandya/CyberSecurity/blob/main/Screenshot/KibanaCheck.PNG)
 
-http://104.210.51.88:5601/app/kibana
-
- xxxxxxxxx
+[http://104.210.51.88:5601/app/kibana](https://github.com/DhawalPandya/CyberSecurity/blob/main/Screenshot/KibanaWebpage.PNG)
  
 A.After run the kibana, I will install filebeat and metricbeat inside the files folder in ansible.
 
 Fielbeat helps generate and organize log files to send to Logstash and Elasticsearch. It log information about the file system, including which files have changed and when.
-
-xxxxxx
  
 B.Run the Filebeat configuration file templete on ansible container.
- 
- xxxxxx
 
 C.After install the filebeat configuration file inside the /etc/ansibe/files/filebeat-config.yml
  
- xxxxxxxx
- 
 D.Edit the filebeat-config.yml  for replace the ip address on elk machine(Ctrl+Shift+ -_ 1106 and 1806)
- 
- xxxxx
 
 E.Line 1806 and replace the IP address at ELK Machine
  
- xxxxxx
- 
 F.Now I create the filebeat installation playbook on /etc/ansible/roles/
  
- xxxxxx
- 
 G.Create filebeat-playbook (filebeat-playbook.yml)
- 
- xxxxx
- 
+
+[Filebeat-Playbook](https://github.com/DhawalPandya/CyberSecurity/blob/main/Screenshot/FilebeatPlaybook.PNG)
+
 H.After run the playbook and check inside kibana browser, step-5 – Module status – Check data – verify incoming data.
- 
-  xxxxxxxxx
+
+[Filebeat data collection](https://github.com/DhawalPandya/CyberSecurity/blob/main/Screenshot/FilebeatDataCollect.PNG)
 
 I.(Filebeat system) syslog dashboard ECS
 
-xxxxxx
-
 J.Now Create Meatricbeat inside the files (/etc/ansible/files/metricbeat)
-
-xxxxxxxx
-
- 
- 
- 
- 
-
 
 Metricbeat playbook :
  
- xxxxxxxx
+[Metricbeat Playbook](https://github.com/DhawalPandya/CyberSecurity/blob/main/Screenshot/MetricbeatPlaybook.PNG)
 
 After run the metricbeat-playbook, went to bourse:  Kibana-Metrics-Docker metric-DEB-Module Status- Check data
  
- xxxxxxxx
- 
+[Metricbeat data collection](https://github.com/DhawalPandya/CyberSecurity/blob/main/Screenshot/MetricbeatDataCollect.PNG)
+
+[Azure-RedTeam-ResourceGroup-Screenshot](https://github.com/DhawalPandya/CyberSecurity/blob/main/Screenshot/AzureScreenshot.PNG)
 
 
  
