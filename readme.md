@@ -54,7 +54,7 @@ Only the JumpBox machine can accept connections from the Internet. Access to thi
 - Personal IP addresses (107.190.0.0/16)
 
 Machines within the network can only be accessed by JumpBox.
-- Only ELK VM machine has access from the personal ip with 5601 port. http://104.210.51.88:5601/app/kibana
+- Only ELK VM machine has access from the personal ip with 5601 port. [http://104.210.51.88:5601/app/kibana](https://github.com/DhawalPandya/CyberSecurity/blob/main/Screenshot/KibanaWebpage.PNG)
 
 A summary of the access policies in place can be found in the table below.
 
